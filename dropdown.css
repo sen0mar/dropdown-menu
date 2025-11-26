@@ -45,20 +45,13 @@ body {
     transition: transform 0.2s;
 }
 
-.caret-rotate {
-    transform: rotate(180deg);
-}
-
 .dropdown-title:hover {
     background-color: rgb(32, 32, 32);
 }
 
-.dropdown-title-on {
-    box-shadow: 0 0 40px #ff4d4d;
-}
-
 .options-list {
     opacity: 0;
+    pointer-events: none;
 
     display: flex;
     flex-direction: column; 
@@ -88,3 +81,15 @@ body {
 }
 
 /* JAVASCRIPT SELECTORS */
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown-title-on {
+    box-shadow: 0 0 40px #ff4d4d;
+}
+
+.options-list-on {
+    opacity: 100;
+    pointer-events: auto;
+}
